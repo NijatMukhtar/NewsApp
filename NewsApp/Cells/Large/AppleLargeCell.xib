@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="230" id="KGk-i7-Jjw" customClass="AppleLargeCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleNewsImage" translatesAutoresizingMaskIntoConstraints="NO" id="YaF-1A-7n3">
+                        <rect key="frame" x="16" y="16" width="288" height="192"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56X-x5-hh5">
+                        <rect key="frame" x="16" y="216" width="288" height="22"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="k8d-Rr-J4q">
+                                <rect key="frame" x="0.0" y="1" width="20" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifehacker.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQS-Yt-qPW">
+                                <rect key="frame" x="28" y="1" width="252" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k8d-Rr-J4q" secondAttribute="bottom" constant="1" id="6wu-nD-Le1"/>
+                            <constraint firstItem="pQS-Yt-qPW" firstAttribute="leading" secondItem="k8d-Rr-J4q" secondAttribute="trailing" constant="8" id="F9G-WT-hjr"/>
+                            <constraint firstAttribute="bottom" secondItem="pQS-Yt-qPW" secondAttribute="bottom" constant="1" id="Fp6-dc-hhE"/>
+                            <constraint firstItem="pQS-Yt-qPW" firstAttribute="top" secondItem="56X-x5-hh5" secondAttribute="top" constant="1" id="PD9-KU-xQl"/>
+                            <constraint firstAttribute="trailing" secondItem="pQS-Yt-qPW" secondAttribute="trailing" constant="8" id="fhM-pp-Sub"/>
+                            <constraint firstItem="k8d-Rr-J4q" firstAttribute="top" secondItem="56X-x5-hh5" secondAttribute="top" constant="1" id="hjm-k0-2yf"/>
+                            <constraint firstItem="k8d-Rr-J4q" firstAttribute="width" secondItem="56X-x5-hh5" secondAttribute="width" multiplier="0.0694444" id="jxF-rt-3z5"/>
+                            <constraint firstItem="k8d-Rr-J4q" firstAttribute="leading" secondItem="56X-x5-hh5" secondAttribute="leading" id="wFv-aD-0Qn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022-08-18 16:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-b4-xHq">
+                        <rect key="frame" x="16" y="297" width="105" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Delete These 35 Malware Apps on Your Android" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36z-Fu-2zq">
+                        <rect key="frame" x="16" y="242" width="288" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="56X-x5-hh5" secondAttribute="bottom" constant="71" id="1oR-WI-Xn3"/>
+                    <constraint firstItem="36z-Fu-2zq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="AgD-72-p0w"/>
+                    <constraint firstItem="YaF-1A-7n3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="DtV-vB-Pk6"/>
+                    <constraint firstItem="56X-x5-hh5" firstAttribute="top" secondItem="YaF-1A-7n3" secondAttribute="bottom" constant="8" symbolic="YES" id="FOV-fF-LSk"/>
+                    <constraint firstItem="Dld-b4-xHq" firstAttribute="top" secondItem="36z-Fu-2zq" secondAttribute="bottom" constant="4" id="IaR-9Q-EMF"/>
+                    <constraint firstItem="36z-Fu-2zq" firstAttribute="top" secondItem="56X-x5-hh5" secondAttribute="bottom" constant="4" id="MKw-d0-SKd"/>
+                    <constraint firstItem="YaF-1A-7n3" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.9" id="OVK-ID-cTX"/>
+                    <constraint firstItem="Dld-b4-xHq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W61-gU-zFM"/>
+                    <constraint firstItem="36z-Fu-2zq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bN2-S2-pY3"/>
+                    <constraint firstItem="Dld-b4-xHq" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="fdr-Ma-ydN"/>
+                    <constraint firstItem="56X-x5-hh5" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.9" id="g9S-md-xwX"/>
+                    <constraint firstItem="YaF-1A-7n3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="q7h-kp-JXw"/>
+                    <constraint firstItem="56X-x5-hh5" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.06875" id="r7C-Xc-TQR"/>
+                    <constraint firstItem="56X-x5-hh5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vcz-Uz-xVE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="newsImage" destination="YaF-1A-7n3" id="6zz-nZ-kbv"/>
+                <outlet property="newsLogo" destination="k8d-Rr-J4q" id="bKs-jK-wrU"/>
+                <outlet property="newsReleaseDate" destination="Dld-b4-xHq" id="krb-Ah-PUk"/>
+                <outlet property="newsSource" destination="pQS-Yt-qPW" id="daX-Yj-HPh"/>
+                <outlet property="newsTitle" destination="36z-Fu-2zq" id="EXN-aP-5NO"/>
+            </connections>
+            <point key="canvasLocation" x="143.07692307692307" y="73.93364928909952"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sampleLogo" width="155" height="46"/>
+        <image name="sampleNewsImage" width="1200" height="675"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		357A636928B051E700F2D48B /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357A636828B051E700F2D48B /* NewsModel.swift */; };
+		357A636D28B0528200F2D48B /* AppleLargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357A636B28B0528200F2D48B /* AppleLargeCell.swift */; };
+		357A636E28B0528200F2D48B /* AppleLargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357A636C28B0528200F2D48B /* AppleLargeCell.xib */; };
 		35A0878128B04A11009174A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0878028B04A11009174A3 /* AppDelegate.swift */; };
 		35A0878328B04A11009174A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0878228B04A11009174A3 /* SceneDelegate.swift */; };
-		35A0878528B04A11009174A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0878428B04A11009174A3 /* ViewController.swift */; };
+		35A0878528B04A11009174A3 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A0878428B04A11009174A3 /* MainPageController.swift */; };
 		35A0878828B04A11009174A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A0878628B04A11009174A3 /* Main.storyboard */; };
 		35A0878A28B04A14009174A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A0878928B04A14009174A3 /* Assets.xcassets */; };
 		35A0878D28B04A14009174A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A0878B28B04A14009174A3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		357A636828B051E700F2D48B /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		357A636B28B0528200F2D48B /* AppleLargeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLargeCell.swift; sourceTree = "<group>"; };
+		357A636C28B0528200F2D48B /* AppleLargeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppleLargeCell.xib; sourceTree = "<group>"; };
 		35A0877D28B04A11009174A3 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A0878028B04A11009174A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A0878228B04A11009174A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35A0878428B04A11009174A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35A0878428B04A11009174A3 /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		35A0878728B04A11009174A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35A0878928B04A14009174A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A0878C28B04A14009174A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		357A636228B04D4800F2D48B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35A0878428B04A11009174A3 /* MainPageController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		357A636328B0501500F2D48B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				357A636F28B0528600F2D48B /* Large */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		357A636A28B051EF00F2D48B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				357A636828B051E700F2D48B /* NewsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		357A636F28B0528600F2D48B /* Large */ = {
+			isa = PBXGroup;
+			children = (
+				357A636B28B0528200F2D48B /* AppleLargeCell.swift */,
+				357A636C28B0528200F2D48B /* AppleLargeCell.xib */,
+			);
+			path = Large;
+			sourceTree = "<group>";
+		};
 		35A0877428B04A11009174A3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +97,9 @@
 			children = (
 				35A0878028B04A11009174A3 /* AppDelegate.swift */,
 				35A0878228B04A11009174A3 /* SceneDelegate.swift */,
-				35A0878428B04A11009174A3 /* ViewController.swift */,
+				357A636A28B051EF00F2D48B /* Models */,
+				357A636228B04D4800F2D48B /* Controllers */,
+				357A636328B0501500F2D48B /* Cells */,
 				35A0878628B04A11009174A3 /* Main.storyboard */,
 				35A0878928B04A14009174A3 /* Assets.xcassets */,
 				35A0878B28B04A14009174A3 /* LaunchScreen.storyboard */,
@@ -125,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357A636E28B0528200F2D48B /* AppleLargeCell.xib in Resources */,
 				35A0878D28B04A14009174A3 /* LaunchScreen.storyboard in Resources */,
 				35A0878A28B04A14009174A3 /* Assets.xcassets in Resources */,
 				35A0878828B04A11009174A3 /* Main.storyboard in Resources */,
@@ -138,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A0878528B04A11009174A3 /* ViewController.swift in Sources */,
+				35A0878528B04A11009174A3 /* MainPageController.swift in Sources */,
 				35A0878128B04A11009174A3 /* AppDelegate.swift in Sources */,
 				35A0878328B04A11009174A3 /* SceneDelegate.swift in Sources */,
+				357A636928B051E700F2D48B /* NewsModel.swift in Sources */,
+				357A636D28B0528200F2D48B /* AppleLargeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
